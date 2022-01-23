@@ -1,0 +1,86 @@
+.example__h1,
+.example__h2,
+.example__h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.example__h1 {
+  font-size: var(--h1);
+  font-weight: bold;
+}
+
+.example__h2 {
+  font-size: var(--h2);
+}
+
+.example__h3 {
+  font-size: var(--h3);
+}
+
+.link {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.link:hover { 
+  text-decoration: underline;
+}
+
+.button {
+  background-color: var(--primary-light);
+  padding: 8px 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+.button:hover {
+  padding: 10px 10px;
+}
+
+.button_confirm {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+input[type="text"],
+textarea,
+select {
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  font-family: "Comfortaa";
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border: 1px solid;
+  border-color: black;
+  height: 200px;
+  width: 300px;
+  border-radius: 8px 8px 15px 15px;
+  color: var(--gray);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card__text {
+  padding: 2px 16px;
+}
+
+.card__image{
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 65%;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Styleguide Tradester</title>
+    <link rel="stylesheet" href="../styles/styleguide.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__header">
+        <a href="#">Tradester</a>
+        <p>Gottschling & Rinnerberger</p>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__headline"><a href="#brand-guidelines">Brand-Guidelines</a></li>
+        <li class="nav__item"><a href="#introduction">Einleitung</a></li>
+        <li class="nav__item"><a href="#colors">Farben</a></li>
+        <li class="nav__item"><a href="#typography">Typografie</a></li>
+        <li class="nav__item"><a href="#logo">Logo</a></li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__headline"><a href="#css-methodology">CSS-Methodologie</a></li>
+        <li class="nav__item"><a href="#code-conventions">Code-Konventionen</a></li>
+        <li class="nav__item"><a href="#class-naming">Class-Naming</a></li>
+        <li class="nav__item"><a href="#breakpoints">Breakpoints</a></li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__headline"><a href="#components">Komponenten</a></li>
+        <li class="nav__item"><a href="#headlines">Headlines & Spacing</a></li>
+        <li class="nav__item"><a href="#lists">Listen</a></li>
+        <li class="nav__item"><a href="#links">Links</a></li>
+        <li class="nav__item"><a href="#buttons">Buttons</a></li>
+        <li class="nav__item"><a href="#inputs">Input-Elemente</a></li>
+        <li class="nav__item"><a href="#icons">Icons</a></li>
+        <li class="nav__item"><a href="#cards">Cards</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="brand-guidelines">
+        <h1 class="section__heading">Brand-Guidelines</h1>
+        <div id="introduction">
+          <h2>Einleitung</h2>
+          <p>Hallo, das ist unser Styleguide für das kommende MMP2a-Projekt namens "Tradester". Es handelt sich
+            hierbei um eine Tauschbörsen-Website, bei der Studierende vom Campus
+            der FH-Salzburg ihre Artikel verkaufen, verschenken beziehungsweise tauschen oder Artikel von
+            anderen Studierenden erhalten können.
+          </p>
+        </div>
+        <div id="colors">
+          <h2>Farben</h2>
+          <div class="color__grid">
+            <div>
+              <div class="color__component color__component_navigation"></div>
+              <p class="color__hexcode">#014289</p>
+              <strong>$primary-dark</strong>
+              <p>Diese Farbe verwenden wir primär für unsere Navigationsleiste und für Buttons, mit denen man
+                etwas bestätigt (Speichern, Erstellen).</p>
+            </div>
+
+            <div>
+              <div class="color__component color__component_header"></div>
+              <p class="color__hexcode">#006FAF</p>
+              <strong>$primary-regular</strong>
+              <p>Diese Farbe verwenden wir für die Überschriften der Website.</p>
+            </div>
+
+            <div>
+              <div class="color__component color__component_interaction"></div>
+              <p class="color__hexcode">#009AC0</p>
+              <strong>$primary-light</strong>
+              <p>Diese Farbe verwenden wir für Elemente, mit denen man interagieren kann (Buttons für
+                Einstellungen, Einträge in der mobilen Navigation etc.).</p>
+            </div>
+
+            <div>
+              <div class="color__component color__component_highlight"></div>
+              <p class="color__hexcode">#00CCBC</p>
+              <strong>$secondary</strong>
+              <p>Diese Farbe verwenden wir, wenn wir etwas hervorheben wollen (z.B. Suchergebnis, Kommentar des Erstellers etc.).</p>
+            </div>
+
+            <div>
+              <div class="color__component color__component_text"></div>
+              <p class="color__hexcode">#303030</p>
+              <strong>$gray</strong>
+              <p>Diese Farbe verwenden wir für den Fließtext der Website.</p>
+            </div>
+
+            <div>
+              <div class="color__component color__component_white"></div>
+              <p class="color__hexcode">#FFFFFF</p>
+              <strong>$white</strong>
+              <p>Diese Farbe verwenden wir für den Hintergrund oder für die Textfarbe in der Navigation und in Buttons.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="typography">
+          <h2>Typografie</h2>
+          <p>Wir haben uns für die Schriftart <a href="https://fonts.google.com/specimen/Comfortaa">"Comfortaa"</a> entschieden 
+            und diese wird im Projekt primär verwendet.</p>
+          <div class="example">
+            <strong>
+              ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ<br>
+              abcdefghijklmnopqrstuvwxyzäöüß<br>
+              1234567890’,.&lt;&gt;/?;’:”[]{}-=_+!@#$%^&*()
+            </strong>
+          </div>
+        </div>
+
+        <div id="logo">
+          <h2>Logo</h2>
+          <p>Unser Logo ist unser Projektname. Es agiert beim Klicken auch als Weiterleitung zurück auf die Startseite.</p>
+          <div class="example">
+            <img src="../assets/images/logo.png" alt="Logo">
+          </div>
+        </div>
+      </section>
+
+      <section id="css-methodology">
+        <h1 class="section__heading">CSS-Methodologie</h1>
+        <div id="code-conventions">
+          <h2>Code-Konventionen</h2>
+          <p>Für die Code-Konventionen werden wir uns an Folgendes richten:</p>
+          <ul>
+            <li><a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset von Eric Meyer</a> wird angewandt</li>
+            <li>Namen in Lowercase schreiben</li>
+            <li>Unterbrechungen im Namen mit Bindestrich</li>
+            <li>Öffnungsklammer hat ein Leerzeichen davor</li>
+            <li>Endklammer in einer eigenen Zeile</li>
+            <li>Leerzeichen zwischen Property und Value</li>
+            <li>jeder Selector kommt in eine eigene Zeile, wenn mehrere verwendet werden (Reset ausgenommen)</li>
+            <li>ein Tab ist zwei Leerzeichen groß</li>
+            <li>leere Zeilen zwischen Regel-Deklarationen</li>
+            <li>RubyOnRails legt automatisch eine Dateien-Struktur an</li>
+            <li>RubyOnRails arbeitet mit SCSS</li>
+            <li>Units werden überwiegend in "px" angegeben</li>
+            <li>Tag- und ID-Selectoren etc. sind erlaubt</li>
+          </ul>
+        </div>
+
+        <div id="class-naming">
+          <h2>Class-Naming</h2>
+          <p>Für die Namenskonventionen werden wir uns an den <a href="https://en.bem.info/methodology/key-concepts" target="_blank">BEM</a> und <a href="https://www.keycdn.com/blog/oocss" target="_blank">OOCSS</a> Richtlinien orientieren.</p>
+        </div>
+
+        <div id="breakpoints">
+          <h2>Breakpoints</h2>
+          <p>Der Breakpoint zwischen der Desktop- und Mobile-Version unserer Website liegt bei 768px.</p>
+        </div>
+      </section>
+
+      <section id="components">
+        <h1 class="section__heading">Komponenten</h1>
+        <div id="headlines">
+          <h2>Headlines</h2>
+          <p>Die Headlines werden verwendet um Text zu kategorisieren und Unterteilungen klarzustellen.</p>
+
+          <div class="example">
+            <p class="example__h1">Überschrift 1</p>
+          </div>
+          <div class="code">
+            <p>&lt;h1&gt;Überschrift1&lt;/h1&gt;</p>
+          </div>
+          <p>Die Überschrift 1 (26px, fett) wird primär für das Logo der Website verwendet.</p>
+
+          <div class="example">
+            <p class="example__h2">Überschrift 2</p>
+          </div>
+          <div class="code">
+            <p>&lt;h2&gt;Überschrift2&lt;/h2&gt;</p>
+          </div>
+          <p>Die Überschrift 2 (22px, fett) wird primär für die Hauptunterteilungen verwendet.</p>
+
+          <div class="example">
+            <p class="example__h3">Überschrift 3</p>
+          </div>
+          <div class="code">
+            <p>&lt;h3&gt;Überschrift3&lt;/h3&gt;</p>
+          </div>
+          <p>Die Überschrift 3 (20px) wird für Unterteilungen in der Hauptunterteilung verwendet.</p>
+
+          <h2>Spacing</h2>
+          <p>Auf unserer Website wird Text mit einer "line-height" von 1.5 formattiert.</p>
+          <p>Der Abstand der Unterteilungen beträgt je nach Art der Unterteilung 5px, 15px, 25px oder 50px.</p>
+        </div>
+
+        <div id="lists">
+          <h2>Listen</h2>
+          <p>Eine ungeordnete Liste verwenden wir mit Punkt-Aufzählung.</p>
+
+          <div class="example">
+            <ul>
+              <li>2 Leerzeichen Indentation</li>
+              <li>Class-Names mit Bindestrich</li>
+              <li>Leerzeichen vor Öffnungs-Klammer</li>
+            </ul>
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;ul&gt; <br>
+              &ensp;&lt;li&gt;2 Leerzeichen Indentation&lt;/li&gt;<br>
+              &ensp;&lt;li&gt;Class-Names mit Bindestrich&lt;/li&gt;<br>
+              &ensp;&lt;li&gt;Leerzeichen vor Öffnungs-Klammer&lt;/li&gt;<br>
+              &lt;/ul&gt;
+            </p>
+          </div>
+        </div>
+
+        <div id="links">
+          <h2>Links</h2>
+          <p>Links werden bei uns z.B. beim Login/Registrieren und im Impressum zur Weiterleitung verwendet.</p>
+
+          <div class="example">
+            <a class="link">Du hast noch kein Konto? </a>
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;a href="..." class="link"&gt;Du hast noch kein Konto?&lt;/a&gt;
+            </p>
+          </div>
+        </div>
+
+        <div id="buttons">
+          <h2>Buttons</h2>
+          <p>Bei uns werden Buttons verwendet, wenn der Nutzer besonders mit der Website interagieren kann. 
+            Die "Standard" Variante wird hierbei für generelle Interaktionen verwendet (z.B. Einloggen oder Kommentieren). 
+            Die "Bestätigung" Variante wird verwendet, wenn dadurch Änderungen bei Artikel durchgeführt werden (z.B. Anlegen oder Speichern).</p>
+
+          <div class="example">
+            <div class="example__item">
+              <p>Standard</p>
+              <a class="button button_hover">Einloggen</a>
+            </div>
+            <div class="example__item">
+              <p>Bestätigung</p>
+              <a class="button button_confirm button_hover">Speichern</a>
+            </div>
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;a href="..." class="button"&gt;Einloggen&lt;/a&gt;<br>
+              &lt;a href="..." class="button button_confirm"&gt;Speichern&lt;/a&gt;
+            </p>
+          </div>
+        </div>
+          
+        <div id="inputs">
+          <h2>Input-Elemente</h2>
+          <p>Wir verwenden Input-Elemente um den User-Input verarbeiten zu können. Dabei benutzen wir die Inputs: Text, Textarea und Select</p>
+          
+          <h3>Text</h3>
+          <p>Der Input mit dem Typ "text" wird bei uns für kurze Texteingaben verwendet. (z.B. Username oder Titel)</p>
+
+          <div class="example">
+            <input type="text" id="name" name="name" placeholder="Username">
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;input type="text" id="name" name="name" placeholder="Username"&gt;
+            </p>
+          </div>
+
+          <h3>Textarea</h3>
+          <p>Der Textarea Input wird bei uns für längere Texteingaben verwendet. (z.B. Beschreibung oder Kommentar)</p>
+
+          <div class="example">
+            <textarea placeholder="Kommentar"></textarea>
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;textarea name="comment" placeholder="Kommentar"&gt;&lt;textarea&gt;<br>
+            </p>
+          </div>
+
+          <h3>Select</h3>
+          <p>Der Select Input wird bei uns für die Auswahlmöglichkeit der Kategorie verwendet.</p>
+
+          <div class="example">
+            <select id="category" name="category">
+              <option value="book">Buch</option>
+              <option value="cd">CD</option>
+            </select>
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;select id="category" name="category"&gt;<br>
+              &ensp;&lt;option value="book"&gt;Buch&lt;/option&gt;<br>
+              &ensp;&lt;option value="cd"&gt;CD&lt;/option&gt;<br>
+              &lt;/select&gt;
+            </p>
+          </div>
+        </div>
+
+        <div id="icons">
+          <h2>Icons</h2>
+          <p>Auf unserer Website verwenden wir diese Icons:</p>
+
+          <div class="example">
+            <img style="width: 50px; height: 50px;" src="../assets/images/search-interface-symbol.png" alt="Lupen-Icon"><br>
+          </div>
+          <a class="link" href="https://www.flaticon.com/free-icons/search" target="_blank">"Search" von Catalin Fertu - Flaticon</a>
+          <p>Das Lupen-Icon wird für die Suchleiste verwendet.</p>
+          <div class="code">
+            <p>
+              &ensp;&lt;img class="icon" src="../assets/images/search-interface-symbol.png"&gt;
+            </p>
+          </div>
+
+          <div class="example">
+            <img style="width: 50px; height: 50px;" src="../assets/images/account.png" alt="User-Icon"><br>
+          </div>
+          <a class="link" href="https://www.flaticon.com/free-icons/user" target="_blank">"User" von Phoenix Group - Flaticon</a>
+          <p>Das Profil-Icon wird für die Kommentarsektion verwendet, um den User darzustellen.</p>
+          <div class="code">
+            <p>
+              &ensp;&lt;img class="icon" src="../assets/images/account.png"&gt;
+            </p>
+          </div>
+        </div>
+
+        <div id="cards">
+          <h2>Cards</h2>
+          <p>Die Cards verwenden wir für das Anzeigen der Artikel auf der Website. Durch das Anklicken der Card wird man zu dem
+            Artikel weitergeleitet.
+          </p>
+
+          <div class="example">
+            <a class="card">
+              <img class="card__image" src="../assets/images/php.jpg" alt="PHP für Dummies">
+              <div class="card__text">
+                <p>PHP für Dummies <br>20€</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="code">
+            <p>
+              &lt;a href="..." class="card"&gt;<br>
+              &ensp;&lt;img class="card__image" src="../assets/images/php.jpg"&gt;<br>
+              &ensp;&lt;div class="card__text"&gt;<br>
+              &ensp;&ensp;&lt;p>PHP für Dummies &lt;br&gt;20€&lt;/p&gt;<br>
+              &ensp;&lt;/div&gt;<br>
+              &lt;/a&gt;
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
